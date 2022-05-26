@@ -1,0 +1,26 @@
+specVersion: 0.0.4
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum
+    name: SoulBound
+    network: rinkeby
+    source:
+      address: "0xc4E2E70D0538aD3bb8C18972EB362F0ca780182F"
+      abi: SoulFactory
+      startBlock: 10735554
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - Soul
+        - OwnershipTransferred
+        - SoulCreated
+      abis:
+        - name: SoulFactory
+          file: SoulBound/abis/SoulFactory.json
+      eventHandlers:
+        - event: SoulCreated(indexed address,indexed uint256,indexed string,address,uint256)
+          handler: handleSoulCreated
+      file: SoulBound/SoulBound.wasm

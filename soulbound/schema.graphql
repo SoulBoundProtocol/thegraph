@@ -1,0 +1,7 @@
+type Soul @entity {
+  id: ID!
+  creator: Bytes! #address
+  soulId: BigInt!
+  name: String
+  soul: Bytes! #address
+}

@@ -25,6 +25,15 @@ $ graph deploy --studio <SUBGRAPH_SLUG>
 
 ## Example Request
 
+### Docs
+https://thegraph.com/docs/zh/developer/querying-from-your-app/
+
+### PRODUCTION QUERY URL (RINKEBY)
+https://gateway.testnet.thegraph.com/api/[api-key]/subgraphs/id/AU9Ae18M7qSzasPUAdSvECrAFkjQMCHx5wQDqBhHTTV7
+
+### DEVELOPMENT QUERY URL
+https://api.studio.thegraph.com/query/28260/soulbound/v0.0.1
+
 ```graphql
 {
   souls(first: 5) {

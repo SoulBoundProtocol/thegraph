@@ -86,4 +86,13 @@ export class Soul extends Entity {
   set length(value: BigInt) {
     this.set("length", Value.fromBigInt(value));
   }
+
+  get hash(): Bytes {
+    let value = this.get("hash");
+    return value!.toBytes();
+  }
+
+  set hash(value: Bytes) {
+    this.set("hash", Value.fromBytes(value));
+  }
 }

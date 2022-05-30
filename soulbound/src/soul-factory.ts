@@ -69,6 +69,7 @@ export function handleSoulCreated(event: SoulCreated): void {
   soul.soulId = event.params.soulId
   soul.name = event.params.name
   soul.length = event.params.length
+  soul.hash = event.transaction.hash
 
   // Entities can be written to the store with `.save()`
   soul.save()

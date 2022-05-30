@@ -5,4 +5,5 @@ type Soul @entity {
   name: Bytes!
   soul: Bytes! #address
   length: BigInt!
+  hash: Bytes!
 }

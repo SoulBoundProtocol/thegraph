@@ -32,7 +32,7 @@ https://thegraph.com/docs/zh/developer/querying-from-your-app/
 https://gateway.testnet.thegraph.com/api/[api-key]/subgraphs/id/AU9Ae18M7qSzasPUAdSvECrAFkjQMCHx5wQDqBhHTTV7
 
 ### DEVELOPMENT QUERY URL
-https://api.studio.thegraph.com/query/28260/soulbound/v0.0.3
+https://api.studio.thegraph.com/query/28260/soulbound/v0.0.4
 
 ```graphql
 {

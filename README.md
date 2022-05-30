@@ -32,7 +32,7 @@ https://thegraph.com/docs/zh/developer/querying-from-your-app/
 https://gateway.testnet.thegraph.com/api/[api-key]/subgraphs/id/AU9Ae18M7qSzasPUAdSvECrAFkjQMCHx5wQDqBhHTTV7
 
 ### DEVELOPMENT QUERY URL
-https://api.studio.thegraph.com/query/28260/soulbound/v0.0.1
+https://api.studio.thegraph.com/query/28260/soulbound/v0.0.3
 
 ```graphql
 {
@@ -40,8 +40,8 @@ https://api.studio.thegraph.com/query/28260/soulbound/v0.0.1
     id
     creator
     soulId
-    soul
     name
+    length
   }
 }
 ```
@@ -53,25 +53,39 @@ https://api.studio.thegraph.com/query/28260/soulbound/v0.0.1
   "data": {
     "souls": [
       {
+        "id": "0x046db183639ca3db83c5e3867983139ed51daaac4aae922aa1eb54b439c44e64-32",
+        "creator": "0x378f7533041249cd1806550deaa2f73a856c9889",
+        "soulId": "2",
+        "name": "0x48bed44d1bcd124a28c27f343a817e5f5243190d3c52bf347daf876de1dbbf77",
+        "length": "6"
+      },
+      {
+        "id": "0x1386171777b9216d1285aa7c65ba645cace7252ae944d24702ca983aad3a2659-24",
+        "creator": "0x3e657631eb0c4715daee88d26dd42c2e999f3c92",
+        "soulId": "1",
+        "name": "0xc1ed523aa753ea126af382cd6e5d97a38e7401dd519bd4338cc2480409fe6018",
+        "length": "9"
+      },
+      {
+        "id": "0x24ccb476707f500086aa1a2befb95543464b1376a3a0993ab5cd0da69b0f082d-35",
+        "creator": "0x378f7533041249cd1806550deaa2f73a856c9889",
+        "soulId": "3",
+        "name": "0xee07dc2598625017c68fbd0a43362728a52940989a308f8b1538307e00c54f9b",
+        "length": "7"
+      },
+      {
+        "id": "0x2e29d4718c8464df36a8164d6b5d6d6d5e20163e33034d680a219fdc4620bb9d-16",
+        "creator": "0x378f7533041249cd1806550deaa2f73a856c9889",
+        "soulId": "1",
+        "name": "0x3b13a0e7e4762192a84755e11f97a673eaeeb474796129d6fbf89e05c6e7a8d1",
+        "length": "4"
+      },
+      {
         "id": "0x4e91a2065c06ea5e2594c3de4fdd9e412af80bb5baeb0729de0431f35ce55f31-94",
         "creator": "0x378f7533041249cd1806550deaa2f73a856c9889",
         "soulId": "0",
-        "soul": "0x110d83ac5380f9698e73ff68e84fd749c569e15a",
-        "name": null
-      },
-      {
-        "id": "0x999fdf9ab2395236ee008eb703a9958d4438dd4ad88835ca52639fde424154e4-25",
-        "creator": "0x25df6da2f4e5c178ddff45038378c0b08e0bce54",
-        "soulId": "0",
-        "soul": "0xf6c92dfd6dfc87c3750971060e6206780db620e0",
-        "name": null
-      },
-      {
-        "id": "0xd61751e2aaea9314a2ca4537bb645896cefff889e43fc25ce5473f22d152ff5a-9",
-        "creator": "0x3317ad9eda6942b5a7be5ba83346c0ea82c3c26c",
-        "soulId": "0",
-        "soul": "0xd33dbc265522003efdccf267fa6f5a4af9f9398c",
-        "name": null
+        "name": "0xd23b00fcb8e0ebd93983a99e8ff85b08f8a67686540afd945aa825219b012b22",
+        "length": "3"
       }
     ]
   }

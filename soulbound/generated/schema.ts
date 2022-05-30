@@ -60,21 +60,13 @@ export class Soul extends Entity {
     this.set("soulId", Value.fromBigInt(value));
   }
 
-  get name(): string | null {
+  get name(): Bytes {
     let value = this.get("name");
-    if (!value || value.kind == ValueKind.NULL) {
-      return null;
-    } else {
-      return value.toString();
-    }
+    return value!.toBytes();
   }
 
-  set name(value: string | null) {
-    if (!value) {
-      this.unset("name");
-    } else {
-      this.set("name", Value.fromString(<string>value));
-    }
+  set name(value: Bytes) {
+    this.set("name", Value.fromBytes(value));
   }
 
   get soul(): Bytes {
@@ -84,5 +76,14 @@ export class Soul extends Entity {
 
   set soul(value: Bytes) {
     this.set("soul", Value.fromBytes(value));
+  }
+
+  get length(): BigInt {
+    let value = this.get("length");
+    return value!.toBigInt();
+  }
+
+  set length(value: BigInt) {
+    this.set("length", Value.fromBigInt(value));
   }
 }
